@@ -28,8 +28,8 @@ This **Weather App** is designed and developed by **Arnab Mitra**.
 
 ## 🖼️ Screenshots
 
-![Weather App Light Mode](assets/screenshots/WeatherMe.jpg)
-![Weather App Dark Mode](assets/screenshots/WeatherMe1.jpg)
+![Weather App Light Mode](assets/screenShots/WeatherMe.jpg)
+![Weather App Dark Mode](assets/screenShots/WeatherMe1.jpg)
 
 
 ## 📜 License
