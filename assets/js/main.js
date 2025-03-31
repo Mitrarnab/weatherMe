@@ -120,6 +120,7 @@ const dataFill = (data) => {
     document.querySelector('.humidity').textContent = data.current.humidity;
     document.querySelector('.wind_kph').textContent = data.current.wind_kph;
     document.querySelector('.pressure_mb').textContent = data.current.pressure_mb;
+    document.querySelector('.pressure_mbTomorrow').textContent = data.current.pressure_mb;
     document.querySelector('.uv').textContent = data.current.uv;
 
     // fillHourlyForecast(data.forecast.forecastday[0].hour, isCelsius);
@@ -194,7 +195,9 @@ const fillTomorrowForecast = (tomorrow, isCelsius) => {
     document.querySelector('.sunsetTom').textContent = tomorrow.astro.sunset;
     document.querySelector('.humidityTomorrow').textContent = tomorrow.day.avghumidity;
     document.querySelector('.wind_kphTomorrow').textContent = tomorrow.day.maxwind_kph;
-    document.querySelector('.pressure_mbTomorrow').textContent = tomorrow.day.uv;
+    document.querySelector('.uvTomorrow').textContent = tomorrow.day.uv;
+    // console.log(tomorrow.day.uv)
+    console.log(tomorrow)
 };
 
 // AM/PM - 24 hours 
