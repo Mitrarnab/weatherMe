@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- icon  -->
+    <link rel="apple-touch-icon" href="assets/images/icon/favicon.png">
+    <link rel="shortcut icon" href="assets/images/icon/favicon.png" type="image/x-icon">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <title>WeatherMe</title>
+</head>
+
+<body>
+    <!-- loader  -->
+    <div class="loader">
+        <img src="assets/images/icon/loader.gif" alt="" class="loaderPic">
+    </div>
+
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-sm sticky-top">
+        <div class="container-fluid">
+            <span class="navbar-brand btn fw-bold fs-1">Weather<span class="text-danger">Me</span></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse pt-2 pt-sm-0" id="navbarNav">
+                <div class="navbar-nav m-auto">
+                    <div class="container-fluid d-flex">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 navSearch rounded-pill" type="text"
+                                placeholder="Type Location" aria-label="Search">
+                            <button class="btn btn-dark navSearchBtn rounded-circle" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="tempTgglBox me-sm-3">
+                    <label class="toggle-switch">
+                        <input type="checkbox" class="tempInp" />
+                        <span
+                            class="slider tempInpSpan d-flex align-items-center justify-content-center fw-bold">C</span>
+                    </label>
+                </div>
+
+                <!-- checkbox to mode change  -->
+                <div class="themeBox">
+                    <input type="checkbox" name="checkbox" id="checkbox" />
+                    <label for="checkbox" class="label mx-auto"> </label>
+                </div>
+                <!-- end checkbox here  -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- main  -->
+    <section class="mainsection mt-4">
+        <div class="container">
+            <div class="row">
+                <!-- left time box  -->
+                <div class="col-12 col-lg-5 px-2">
+                    <div
+                        class="namedHead d-flex justify-content-center align-items-center flex-column position-relative">
+                        <h1 class="Locality textHead fw-bold text-center">Kolkata</h1>
+                        <h5 class="text-center country fs-5">India</h5>
+                        <h1 class="text-center textHead timeBox fw-bold">7:41</h1>
+                        <h2 class="dateBox text-center">Thursday, 31 Aug</h2>
+                        <button class="timeformatter">AM/PM</button>
+                    </div>
+                </div>
+
+                <!-- today details  -->
+                <div class="col-12 col-lg-7 px-2">
+                    <div class="gridbox px-4 py-1">
+                        <div>
+                            <div class="temparatureBox">
+                                <h1 class="temp fw-bold m-0">
+                                    <span class="temparatureNow">73</span>°<span class="tempIn">C</span>
+                                </h1>
+                                <h2 class="feelsLike fs-4 ">
+                                    Feels like: <span class="feelTemp fs-3 fw-bolder">22</span>°<span
+                                        class="feelTempIn">C</span>
+                                </h2>
+                            </div>
+                            <div class="sunriseBox py-2 d-flex">
+                                <img src="assets/images/icon/sunrise-white 1.png" alt="" class="sunriseImg">
+                                <div class="ms-3">
+                                    <div class="fw-bolder">Sunrise</div>
+                                    <div class="sunrise fw-bold">06:37 AM</div>
+                                </div>
+                            </div>
+                            <div class="sunriseBox py-2 d-flex">
+                                <img src="assets/images/icon/sunset-white 1.png" alt="" class="sunriseImg">
+                                <div class="ms-3">
+                                    <div class="fw-bolder">Sunset</div>
+                                    <div class="sunset fw-bold">06:37 AM</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <img src="assets/images/icon/10001.png" alt="" class="conditionImg ">
+                            <div class="conditionText text-center fs-4 fw-bold">Sunny</div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="humidityBox py-3">
+                                        <div class="text-center mb-2">
+                                            <img src="assets/images/icon/humidity 1.png" alt="" class="humidityImg">
+                                        </div>
+                                        <div class="text-center mb-1"><span class="humidity">48</span>%</div>
+                                        <div class="text-center fw-bold">Humidity</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="humidityBox py-3">
+                                        <div class="text-center mb-2">
+                                            <img src="assets/images/icon/wind 1.png" alt="" class="humidityImg">
+                                        </div>
+                                        <div class="text-center mb-1"><span class="wind_kph">11</span> km/h</div>
+                                        <div class="text-center fw-bold">Wind Speed</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="humidityBox py-3">
+                                        <div class="text-center mb-2">
+                                            <img src="assets/images/icon/pressure-white 1.png" alt=""
+                                                class="humidityImg">
+                                        </div>
+                                        <div class="text-center mb-1"><span class="pressure_mb">848</span>hPa</div>
+                                        <div class="text-center fw-bold">Pressure</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="humidityBox py-3">
+                                        <div class="text-center mb-2">
+                                            <img src="assets/images/icon/uv-white 1.png" alt="" class="humidityImg">
+                                        </div>
+                                        <div class="text-center mb-1"><span class="uv">8</span>%</div>
+                                        <div class="text-center fw-bold">UV</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- hourly forcast  -->
+                <div class="col-12">
+                    <div class="hourlyForcust mt-3 pb-5">
+                        <h1 class="text-center pt-3 fs-4 fw-bold pb-5">Hourly Forecast</h1>
+                        <div class="dailyfrcst px-2 ">
+                            <!-- Forecast items will be added dynamically -->
+                        </div>
+                        <!-- slider  -->
+                    </div>
+
+                </div>
+
+                <!-- tomorrows data  -->
+                <div class="col-12 mt-3">
+                    <div class="hourlyForcust tomorrowDatas">
+                        <div class="text-center fs-3 fw-bold pt-2 tomHd">Tomorrow</div>
+                        <div class="row">
+                            <div class="col-12 col-lg-3">
+                                <div class="d-flex align-items-center justify-content-center h-100 flex-column">
+                                    <div class="tomorrowTemp text-center fw-bolder ">
+                                        22°C</div>
+                                    <div class="tomorrowDay text-center fw-bolder fs-2"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3">
+                                <div
+                                    class="tomorrowImgBox text-center d-flex flex-column justify-content-center align-items-center h-100">
+                                    <img src="assets/images/icon/10001.png" alt="" class=" conditionTom">
+                                    <div class="dateTomorrow text-center fw-bold fs-4">Wednesday, 13 Nov</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-2">
+                                <div class="d-flex flex-row flex-lg-column justify-content-evenly h-100 pt-lg-0 pt-3">
+                                    <div class="sunriseTomorrow fs-5 fw-bolder">
+                                        <div
+                                            class="d-flex justify-content-center align-items-center flex-column flex-lg-row pb-0 pb-lg-2">
+                                            <img src="assets/images/icon/SunRise.png" alt="" class="tomorrowImg">
+                                            <div>
+                                                <h1 class="text-center fw-bold fs-5 ">Sunrise</h1>
+                                                <span class="fw-medium sunriseTom"></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="sunriseTomorrow fs-5 fw-bolder">
+                                        <div
+                                            class="d-flex justify-content-center align-items-center  flex-column flex-lg-row pb-0 pb-lg-2">
+                                            <img src="assets/images/icon/SunRise.png" alt="" class="tomorrowImg">
+                                            <div>
+                                                <h1 class="text-center fw-bold fs-5 ">Sunrise</h1>
+                                                <span class="fw-medium sunsetTom"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="humidityBox py-3">
+                                            <div class="text-center mb-2">
+                                                <img src="assets/images/icon/humidity 1.png" alt="" class="humidityImg">
+                                            </div>
+                                            <div class="text-center mb-1"><span class="humidityTomorrow"></span>%
+                                            </div>
+                                            <div class="text-center fw-bold">Humidity</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="humidityBox py-3">
+                                            <div class="text-center mb-2">
+                                                <img src="assets/images/icon/wind 1.png" alt="" class="humidityImg">
+                                            </div>
+                                            <div class="text-center mb-1"><span class="wind_kphTomorrow"></span> km/h
+                                            </div>
+                                            <div class="text-center fw-bold">Wind Speed</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="humidityBox py-3">
+                                            <div class="text-center mb-2">
+                                                <img src="assets/images/icon/pressure-white 1.png" alt=""
+                                                    class="humidityImg">
+                                            </div>
+                                            <div class="text-center mb-1"><span
+                                                    class="pressure_mbTomorrow">848</span>hPa</div>
+                                            <div class="text-center fw-bold">Pressure</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="humidityBox py-3">
+                                            <div class="text-center mb-2">
+                                                <img src="assets/images/icon/uv-white 1.png" alt="" class="humidityImg">
+                                            </div>
+                                            <div class="text-center mb-1"><span class="uvTomorrow"></span>%</div>
+                                            <div class="text-center fw-bold">UV</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="text-center p-3 fw-bold mt-3">Developed by
+                <a href="https://www.linkedin.com/in/mitrarnab/" class="text-primary text-decoration-none">Arnab</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- js added  -->
+    <script src="assets/js/jquery-3.7.1.slim.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+</body>
+
+</html>
