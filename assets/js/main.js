@@ -196,8 +196,6 @@ const fillTomorrowForecast = (tomorrow, isCelsius) => {
     document.querySelector('.humidityTomorrow').textContent = tomorrow.day.avghumidity;
     document.querySelector('.wind_kphTomorrow').textContent = tomorrow.day.maxwind_kph;
     document.querySelector('.uvTomorrow').textContent = tomorrow.day.uv;
-    // console.log(tomorrow.day.uv)
-    console.log(tomorrow)
 };
 
 // AM/PM - 24 hours 
