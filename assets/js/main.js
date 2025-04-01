@@ -48,7 +48,9 @@ const slickFill = (startIndex = 0) => {
 window.onload = () => {
     document.body.classList.toggle('darkMode', localStorage.getItem("weatherMode") === 'dark');
     checkbox.checked = document.body.classList.contains('darkMode');
-
+    if (localStorage.getItem("celsius") === null) {
+        localStorage.setItem("celsius", "true");
+    }
     const isCelsius = localStorage.getItem("celsius") === 'true';
     tempInp.checked = !isCelsius;
     tempInpSpan.textContent = isCelsius ? 'C' : 'F';
